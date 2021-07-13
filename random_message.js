@@ -1011,5 +1011,8 @@ const quotes = [
     }
 ];
 const getRandomQuote = () => {
-    
+    let randInt = Math.floor(Math.random()*quotes.length);
+    let quote = quotes[randInt];
+    return `"${quote["quote"]}" by author ${quote["author"]}. His main profession was ${quote["profession"]}.`;
 }
+console.log(getRandomQuote());
