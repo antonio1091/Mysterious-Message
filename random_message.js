@@ -20,6 +20,3 @@ const messageFactory = () => {
         }
     }
 }
-const winterMessage = messageFactory();
-winterMessage.addMessage('Love is war','winter');
-console.log(`The message is: ${winterMessage.message} for season: ${winterMessage.season}`);
